@@ -22,7 +22,7 @@
 
 <section>
 	<div class="row mt-5">
-		<div class="col ">
+		<div class="col mb-5">
 			<p class="hero-head mb-3 d-flex justify-content-center align-items-center fs-4"><a href="#home">FarmFoods</a></p>
 			<p class="hero-txt d-flex justify-content-center align-items-center">get fresh foods directly from the farm...</p>
 		</div>
@@ -39,7 +39,7 @@
 
 <div class="row">
 	<div class="col" align="">
-			<a href="signup.php" type="button" class="home-btn py-2 text-center col-sm-8 col-md-8 offset-2">Join FarmFoods</a>
+			<a href="signup.php" type="button" class="home-btn py-2 text-center col-8 offset-2">Join FarmFoods</a>
 		</div>
 		</div>
 </div>
