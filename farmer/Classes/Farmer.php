@@ -34,7 +34,7 @@ class Farmer extends Db
                         return false;
                     }
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                 die($e->getMessage());
                 return false;
         }
     }
@@ -77,7 +77,8 @@ class Farmer extends Db
                         return false;
                 }
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -91,7 +92,8 @@ class Farmer extends Db
                 $states=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $states;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -104,7 +106,8 @@ class Farmer extends Db
                 $lga=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $lga;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -117,7 +120,8 @@ class Farmer extends Db
                 $stateid=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $stateid;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -129,7 +133,8 @@ class Farmer extends Db
                $res= $stmt->execute([$dob,$phone,$lga,$state,$addr1,$addr2,$dp_name,$userid]);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -141,7 +146,8 @@ class Farmer extends Db
                $res= $stmt->execute([$name,$price,$image,$category,$detail,$userid]);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -166,7 +172,8 @@ class Farmer extends Db
                 $cat=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $cat;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -179,7 +186,8 @@ class Farmer extends Db
                 $cat=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $cat;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -199,7 +207,8 @@ class Farmer extends Db
                 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -212,7 +221,8 @@ class Farmer extends Db
                 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -226,7 +236,8 @@ class Farmer extends Db
                 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -239,7 +250,8 @@ class Farmer extends Db
         $stmt->execute([$id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     } catch (PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
         return false;
     }
 }
@@ -255,7 +267,8 @@ class Farmer extends Db
                 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
     }
@@ -281,7 +294,8 @@ class Farmer extends Db
                 $data= $stmt->fetch(PDO::FETCH_ASSOC);
                 return $data['total_customers'];
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -299,7 +313,8 @@ class Farmer extends Db
                 $data= $stmt->fetch(PDO::FETCH_ASSOC);
                 return $data['total_orders'];
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -312,7 +327,8 @@ class Farmer extends Db
                 $data= $stmt->rowCount();
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -325,7 +341,8 @@ class Farmer extends Db
                 $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -346,7 +363,8 @@ class Farmer extends Db
                 $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -371,7 +389,8 @@ class Farmer extends Db
                 $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }

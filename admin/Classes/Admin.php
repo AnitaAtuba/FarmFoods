@@ -35,7 +35,8 @@
                         return false;
                 }
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -50,7 +51,8 @@
                 $adminid =$this->conn->LastInsertId();
                 return $adminid;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -68,7 +70,8 @@
                         return false;
                     }
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
     }

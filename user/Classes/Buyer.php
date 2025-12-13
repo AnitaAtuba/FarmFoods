@@ -17,7 +17,8 @@ class Buyer extends Db
                 $data = $stmt->fetch(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
     }
@@ -35,7 +36,8 @@ class Buyer extends Db
                         return false;
                     }
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
     }
@@ -49,7 +51,8 @@ class Buyer extends Db
                 $guestid =$this->conn->LastInsertId();
                 return $guestid;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -78,7 +81,8 @@ class Buyer extends Db
                         return false;
                 }
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -94,7 +98,8 @@ class Buyer extends Db
                 $states=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $states;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -107,7 +112,8 @@ class Buyer extends Db
                 $lga=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $lga;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -120,7 +126,8 @@ class Buyer extends Db
                 $cat=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $cat;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -133,7 +140,8 @@ class Buyer extends Db
                 $stateid=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $stateid;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
    }
@@ -145,7 +153,8 @@ class Buyer extends Db
                $res= $stmt->execute([$dob,$phone,$lga,$state,$addr1,$addr2,$dp_name,$userid]);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -159,7 +168,8 @@ class Buyer extends Db
                 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -173,7 +183,8 @@ class Buyer extends Db
                 $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $res;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
          }
        }
@@ -187,7 +198,8 @@ class Buyer extends Db
                 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
     }
@@ -200,7 +212,8 @@ class Buyer extends Db
                 $data= $stmt->rowCount();
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -217,7 +230,8 @@ class Buyer extends Db
                 $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -234,7 +248,8 @@ class Buyer extends Db
                 $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
@@ -285,7 +300,8 @@ class Buyer extends Db
                 $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
                 return $data;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                               die($e->getMessage());
+
                 return false;
         }
             }
