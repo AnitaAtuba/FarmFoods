@@ -64,8 +64,8 @@ echo"</pre>";
            
         $dp_name = "Bf"."_".time()."_".$filename;
         $res = move_uploaded_file($tmp,"../assets/uploads/$dp_name");
-            
-          if($res){
+            die();
+          if(($res)){
                 $farmer =  new Farmer;
                 $profile= $farmer->update_profile($dob,$phone,$lga,$state,$addr1,$addr2,$dp_name,$userid);
                 
