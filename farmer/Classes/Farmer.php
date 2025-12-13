@@ -45,10 +45,10 @@ class Farmer extends Db
                 $stmt = $this->conn->prepare($sql);
                 $hashed = password_hash($pass1, PASSWORD_DEFAULT);
                 $stmt->execute([$fname,$lname,$email,$hashed,$user]);
-                $guestid =$this->conn->LastInsertId();
+                $guestid = $this->conn->LastInsertId();
                 return $guestid;
         }catch(PDOException $e){
-                //$e->getMessage(); die();
+                die($e->getMessage());
                 return false;
         }
    }

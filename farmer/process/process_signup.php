@@ -19,6 +19,7 @@ if(isset($_POST['btn'])){
                 header("location:../../User/login.php");
                 exit;
             }
+            
 
             if(empty($fname) || empty($lname) || empty($email) || empty($pass1) || empty($user)){
                 $_SESSION['farmerror'] = "All fields are required.";
